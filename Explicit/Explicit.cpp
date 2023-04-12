@@ -53,7 +53,7 @@ int main1()
     }
 	else
 	{
-		cout << "Library created successfully\n";
+		cout << "Library created successfully\n"; 
 		void(Stack:: * pConstructor)();
 		(FARPROC&)pConstructor = GetProcAddress(dll, "??0Stack@@QEAA@XZ");
 		Stack* c = (Stack*)HeapAlloc(GetProcessHeap(), NULL, sizeof(Stack));
